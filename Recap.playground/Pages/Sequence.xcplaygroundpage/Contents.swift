@@ -25,9 +25,23 @@ import Cocoa
 import PlaygroundSupport
 
 // Create canvas
-let canvas = Canvas(width: 500, height: 400)
+let canvas = Canvas(width: 500, height: 250)
 
-// Replace this comment and add your code below 
+
+canvas.drawShapesWithBorders = false
+//draw rounded rectangle
+canvas.fillColor = Color(hue: 48, saturation: 100, brightness: 100, alpha: 100)
+canvas.drawRoundedRectangle(centreX: 300, centreY: 125, width: 120, height: 120)
+
+//draw triangle
+canvas.fillColor = Color(hue: 82, saturation: 100, brightness: 80, alpha: 90)
+var points : [NSPoint] = []// creates empty list of type NSPOint
+points.append(NSPoint(x: 320, y: 210))
+    points.append(NSPoint(x: 475, y: 210))
+        points.append(NSPoint(x: 387, y: 25))
+
+canvas.drawCustomShape(with:points)
+
 
 
 /*:
