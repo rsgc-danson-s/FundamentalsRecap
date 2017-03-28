@@ -29,18 +29,28 @@ let canvas = Canvas(width: 500, height: 250)
 
 
 canvas.drawShapesWithBorders = false
+
 //draw rounded rectangle
 canvas.fillColor = Color(hue: 48, saturation: 100, brightness: 100, alpha: 100)
 canvas.drawRoundedRectangle(centreX: 300, centreY: 125, width: 120, height: 120)
 
 //draw triangle
-canvas.fillColor = Color(hue: 82, saturation: 100, brightness: 80, alpha: 90)
+canvas.fillColor = Color(hue: 82, saturation: 100, brightness: 80, alpha: 75)
 var points : [NSPoint] = []// creates empty list of type NSPOint
 points.append(NSPoint(x: 320, y: 210))
-    points.append(NSPoint(x: 475, y: 210))
-        points.append(NSPoint(x: 387, y: 25))
-
+points.append(NSPoint(x: 475, y: 210))
+points.append(NSPoint(x: 387, y: 25))
 canvas.drawCustomShape(with:points)
+
+//draw circle
+canvas.fillColor = Color.red
+canvas.drawEllipse(centreX: 100, centreY: 125, width: 150, height: 150)
+
+//draw rectangle
+canvas.fillColor = Color(hue: 221, saturation: 100, brightness: 100, alpha: 75)
+canvas.drawRectangle(centreX: 200, centreY: 120, width: 120, height: 225)
+
+
 
 
 
