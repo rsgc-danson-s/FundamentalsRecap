@@ -68,6 +68,7 @@ canvas.defaultLineWidth = 10
 canvas.drawLine(fromX: 15, fromY: 450, toX: 15, toY: 375)
 canvas.drawLine(fromX: 85, fromY: 450, toX: 85, toY: 375)
 
+
 //draw orange lines
 canvas.lineColor = Color.init(hue: 22, saturation: 93, brightness: 90, alpha: 100)
 canvas.drawLine(fromX: 25, fromY: 450, toX: 25, toY: 375)
@@ -79,9 +80,11 @@ canvas.lineColor = Color.init(hue: 53, saturation: 93, brightness: 98, alpha: 10
 canvas.drawLine(fromX: 35, fromY: 450, toX: 35, toY: 375)
 canvas.drawLine(fromX: 65, fromY: 450, toX: 65, toY: 375)
 
+//draw white lines
 canvas.lineColor = Color.white
 canvas.defaultLineWidth = 20
 canvas.drawLine(fromX: 50, fromY: 440, toX: 50, toY: 400)
+canvas.drawLine(fromX: 100, fromY: 435, toX: 100, toY: 385)
 
 
 
